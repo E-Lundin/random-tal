@@ -1,0 +1,20 @@
+Generera slumpmässigt nummer, lagra i heltalsvariabeln number
+Skapa en heltalsvariabel attempts, för att lagra antalet gissningar
+Skapa en heltalsvariabel guess, för att lagra den senaste gissningen
+
+Kör iterativt spelet tills guess är lika med number, alltså när användaren har gissat rätt nummer:
+
+Be användaren mata in en gissning, lagra i heltalsvariabeln guess
+	om användaren matar in något som inte är ett heltal, be om ett nytt tal.
+Öka antalet gissningar, attempts, med ett.
+
+Om guess är lika med number
+	Avsluta spelet, skriv ut antalet gissningar
+
+Annars om guess är större än number
+	Skriv ut att guess är för stort
+	Fortsätt spelet, iterera om igen
+
+Annars om guess är mindre än number
+	Skriv ut att guess är för litet
+	Fortsätt spelet, iterera om igen
