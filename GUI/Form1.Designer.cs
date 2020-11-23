@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.outputBox = new System.Windows.Forms.RichTextBox();
+            this.replayButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // guessButton
@@ -77,17 +78,31 @@
             // 
             // outputBox
             // 
+            this.outputBox.BackColor = System.Drawing.SystemColors.Window;
             this.outputBox.Location = new System.Drawing.Point(75, 233);
             this.outputBox.Name = "outputBox";
+            this.outputBox.ReadOnly = true;
             this.outputBox.Size = new System.Drawing.Size(257, 69);
             this.outputBox.TabIndex = 4;
             this.outputBox.Text = "";
+            // 
+            // replayButton
+            // 
+            this.replayButton.Location = new System.Drawing.Point(75, 308);
+            this.replayButton.Name = "replayButton";
+            this.replayButton.Size = new System.Drawing.Size(257, 23);
+            this.replayButton.TabIndex = 5;
+            this.replayButton.Text = "Spela igen!";
+            this.replayButton.UseVisualStyleBackColor = true;
+            this.replayButton.Visible = false;
+            this.replayButton.Click += new System.EventHandler(this.replayButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 336);
+            this.Controls.Add(this.replayButton);
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -95,7 +110,7 @@
             this.Controls.Add(this.guessButton);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "GissaTalet";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,6 +123,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox outputBox;
+        private System.Windows.Forms.Button replayButton;
     }
 }
 
