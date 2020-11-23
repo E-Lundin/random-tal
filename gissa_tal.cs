@@ -15,7 +15,7 @@ namespace GissaTal
         {
             while (true)
             {
-                Console.WriteLine("Gissa ett tal mellan 0 och 100: ");
+                Console.Write("Gissa ett tal mellan 0 och 100: ");
                 string input = Console.ReadLine();
                 int guess;
 
